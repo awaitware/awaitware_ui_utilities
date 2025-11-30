@@ -69,6 +69,8 @@ Text('Hello World')
 
 ## 📦 Installation
 
+### From pub.dev (Recommended)
+
 Add to your `pubspec.yaml`:
 
 ```yaml
@@ -80,6 +82,18 @@ Then run:
 ```bash
 flutter pub get
 ```
+
+### From GitHub
+
+```yaml
+dependencies:
+  awaitware_ui_utilities:
+    git:
+      url: https://github.com/awaitware/awaitware_ui_utilities.git
+      ref: main
+```
+
+**📖 Need help?** See the [Installation Guide](INSTALLATION_GUIDE.md) for detailed instructions.
 
 ## 🚀 Quick Start
 
@@ -344,9 +358,12 @@ Column(
   .m4()
 ```
 
-## 📖 Full Documentation
+## 📖 Documentation
 
-For the complete reference of all 500+ utilities with detailed examples, see [AWAITWARE_FLUTTER_COMPLETE_UI_UTILITIES.md](AWAITWARE_FLUTTER_COMPLETE_UI_UTILITIES.md).
+- **⚡ [Quick Start Guide](QUICK_START.md)** - Get started in 5 minutes
+- **📦 [Installation Guide](INSTALLATION_GUIDE.md)** - Detailed installation instructions
+- **📚 [Complete API Reference](AWAITWARE_FLUTTER_COMPLETE_UI_UTILITIES.md)** - All 500+ utilities with examples
+- **💡 [Example Apps](example/)** - Working code examples
 
 ## 🤝 Contributing
 
