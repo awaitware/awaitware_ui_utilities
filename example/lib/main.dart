@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:awaitware_ui_utilities/awaitware_ui_utilities.dart';
+import 'comprehensive_examples.dart';
 
 void main() => runApp(const MyApp());
 
@@ -29,6 +30,20 @@ class DemoHomePage extends StatelessWidget {
         title: const Text('Awaitware UI Utilities Demo'),
         backgroundColor: Colors.blue.shade600,
         foregroundColor: Colors.white,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.library_books),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ComprehensiveExamples(),
+                ),
+              );
+            },
+            tooltip: 'View All Examples',
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -65,7 +80,7 @@ class DemoHomePage extends StatelessWidget {
             .fontBold()
             .textGray900()
             .textCenter(),
-        const Text('Tailwind CSS-inspired utilities for Flutter')
+        const Text('Powerful Flutter UI toolkit with 500+ utilities')
             .textLg()
             .textGray600()
             .textCenter()
@@ -296,18 +311,41 @@ class DemoHomePage extends StatelessWidget {
   }
 
   Widget _buildFooter() {
-    return Column(
-      children: [
-        const Text('Made with ❤️ using Awaitware UI Utilities')
-            .textSm()
-            .textGray600()
-            .textCenter(),
-        const Text('Try it in your Flutter apps!')
-            .textXs()
-            .textGray500()
-            .textCenter()
-            .pt1(),
-      ],
-    ).p6().bgGray100().roundedXl().m4();
+    return Builder(
+      builder: (context) => Column(
+        children: [
+          const Text('Made with ❤️ using Awaitware UI Utilities')
+              .textSm()
+              .textGray600()
+              .textCenter(),
+          const Text('Try it in your Flutter apps!')
+              .textXs()
+              .textGray500()
+              .textCenter()
+              .pt1(),
+          aw.spaceV(16),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ComprehensiveExamples(),
+                ),
+              );
+            },
+            child: const Text('View Comprehensive Examples →')
+                .textSm()
+                .fontSemibold()
+                .textBlue600()
+                .textCenter()
+                .px4()
+                .py2()
+                .border2()
+                .borderBlue600()
+                .roundedLg(),
+          ),
+        ],
+      ).p6().bgGray100().roundedXl().m4(),
+    );
   }
 }

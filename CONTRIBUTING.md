@@ -91,10 +91,10 @@ git push origin feature/your-feature-name
 
 ### Extension Method Guidelines
 
-1. **Follow Tailwind CSS naming** where applicable
-2. **Use descriptive names** for non-Tailwind utilities
-3. **Include documentation** with examples
-4. **Keep methods simple** and focused on one task
+1. **Use consistent, intuitive naming** that describes the utility's purpose
+2. **Include documentation** with examples
+3. **Keep methods simple** and focused on one task
+4. **Follow existing patterns** in the codebase
 
 Example:
 ```dart

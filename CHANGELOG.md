@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2024-12-01
+
+### Changed
+- Removed Tailwind CSS branding from package description and documentation
+- Updated package description to focus on Awaitware UI Utilities as a standalone toolkit
+- Improved example app with comprehensive UI demonstrations
+- Updated all documentation to reflect modern utility-first approach
+
+### Documentation
+- Refreshed README with updated branding
+- Updated library documentation comments
+- Enhanced example application
+
 ## [1.0.0] - 2024-XX-XX
 
 ### Added
@@ -164,5 +177,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 **Note:** This is the initial release of Awaitware UI Utilities. Future updates will be documented here.
 
+[1.0.1]: https://github.com/awaitware/awaitware_ui_utilities/releases/tag/v1.0.1
 [1.0.0]: https://github.com/awaitware/awaitware_ui_utilities/releases/tag/v1.0.0
-[Unreleased]: https://github.com/awaitware/awaitware_ui_utilities/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/awaitware/awaitware_ui_utilities/compare/v1.0.1...HEAD

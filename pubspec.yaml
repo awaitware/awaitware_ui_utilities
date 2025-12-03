@@ -1,6 +1,6 @@
 name: awaitware_ui_utilities
-description: "Tailwind CSS-inspired UI utilities for Flutter. Build beautiful UIs faster with 500+ chainable extension methods. Write 60-70% less code!"
-version: 1.0.0
+description: "A powerful Flutter UI toolkit with 500+ chainable extension methods. Build beautiful, responsive UIs faster and write 60-70% less code!"
+version: 1.0.1
 homepage: https://github.com/awaitware/awaitware_ui_utilities
 repository: https://github.com/awaitware/awaitware_ui_utilities
 issue_tracker: https://github.com/awaitware/awaitware_ui_utilities/issues

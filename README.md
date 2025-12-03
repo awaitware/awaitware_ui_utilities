@@ -3,9 +3,9 @@
 [![pub package](https://img.shields.io/pub/v/awaitware_ui_utilities.svg)](https://pub.dev/packages/awaitware_ui_utilities)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-**Tailwind CSS-inspired UI utilities for Flutter** - Write beautiful, maintainable Flutter UIs with 500+ chainable extension methods.
+**Powerful Flutter UI Toolkit** - Write beautiful, maintainable Flutter UIs with 500+ chainable extension methods.
 
-Bring the power of utility-first CSS to Flutter! Build UIs faster with intuitive, chainable methods that feel like Tailwind CSS but work perfectly with Flutter's widget system.
+Build stunning UIs faster with intuitive, chainable methods that work perfectly with Flutter's widget system. A utility-first approach to Flutter development.
 
 ## ✨ Features
 
@@ -75,7 +75,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  awaitware_ui_utilities: ^1.0.0
+  awaitware_ui_utilities: ^1.0.1
 ```
 
 Then run:
@@ -377,4 +377,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ for Flutter Developers**
 
-*Inspired by Tailwind CSS, built for Flutter*
+*A modern utility-first toolkit for Flutter development*

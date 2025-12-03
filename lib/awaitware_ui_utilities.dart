@@ -1,7 +1,7 @@
-/// Awaitware UI Utilities - Tailwind CSS-inspired utilities for Flutter
+/// Awaitware UI Utilities - Powerful Flutter UI Toolkit
 ///
-/// A comprehensive collection of 500+ extension methods that bring Tailwind CSS-like
-/// utility-first design to Flutter. Write cleaner, more maintainable UI code with
+/// A comprehensive collection of 500+ extension methods for building beautiful,
+/// responsive Flutter UIs. Write cleaner, more maintainable UI code with
 /// chainable extension methods.
 ///
 /// ## Features
