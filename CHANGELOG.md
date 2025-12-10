@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.2] - 2024-12-10
+
+### Improved
+- Added dartdoc comments to 230+ public API elements for better documentation coverage
+- Fixed Dart formatting issues across all source files
+- Fixed `sized_box_for_whitespace` lint warning in example
+
+### Documentation
+- ColorExtensions: All 113 background color methods now have dartdoc comments
+- TextColorExtensions: All 48 text color methods now have dartdoc comments
+- SpacingExtensions: All 74 padding/margin methods now have dartdoc comments
+- Documentation coverage increased from 8.8% to 20%+
+
 ## [1.0.1] - 2024-12-01
 
 ### Changed
