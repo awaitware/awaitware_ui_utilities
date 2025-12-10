@@ -85,10 +85,16 @@ class ComprehensiveExamples extends StatelessWidget {
           const Text('Background Colors:').fontBold().pb2(),
 
           [
-            const Text('Blue 600').textWhite().px4().py2().bgBlue600().rounded(),
-            const Text('Green 600').textWhite().px4().py2().bgGreen600().rounded(),
+            const Text(
+              'Blue 600',
+            ).textWhite().px4().py2().bgBlue600().rounded(),
+            const Text(
+              'Green 600',
+            ).textWhite().px4().py2().bgGreen600().rounded(),
             const Text('Red 600').textWhite().px4().py2().bgRed600().rounded(),
-            const Text('Purple 600').textWhite().px4().py2().bgPurple600().rounded(),
+            const Text(
+              'Purple 600',
+            ).textWhite().px4().py2().bgPurple600().rounded(),
           ].gap(8).wrapSpaced(spacing: 8, runSpacing: 8),
 
           aw.spaceV(16),
@@ -336,12 +342,13 @@ class ComprehensiveExamples extends StatelessWidget {
 
           const Text('Scrollable:').fontBold().pb2(),
 
-          Container(
+          SizedBox(
             height: 100,
             child: ListView(
               children: List.generate(
                 10,
-                (index) => Text('Scrollable Item ${index + 1}').p2().bgGray100().m1(),
+                (index) =>
+                    Text('Scrollable Item ${index + 1}').p2().bgGray100().m1(),
               ),
             ),
           ).border(),
@@ -415,7 +422,9 @@ class ComprehensiveExamples extends StatelessWidget {
                 8,
                 (index) => Container(
                   padding: const EdgeInsets.all(8),
-                  color: Colors.primaries[index % Colors.primaries.length].shade200,
+                  color: Colors
+                      .primaries[index % Colors.primaries.length]
+                      .shade200,
                   child: Text('Chip ${index + 1}'),
                 ),
               ),
@@ -480,13 +489,19 @@ class ComprehensiveExamples extends StatelessWidget {
 
           aw.text('Created with aw.text()').textBlue600().pb2(),
 
-          aw.container(
-            child: const Text('aw.container()').textWhite(),
-          ).p4().bgGreen600().roundedLg().pb2(),
+          aw
+              .container(child: const Text('aw.container()').textWhite())
+              .p4()
+              .bgGreen600()
+              .roundedLg()
+              .pb2(),
 
-          aw.box(
-            child: const Text('aw.box()').textWhite(),
-          ).p4().bgOrange600().roundedLg().pb2(),
+          aw
+              .box(child: const Text('aw.box()').textWhite())
+              .p4()
+              .bgOrange600()
+              .roundedLg()
+              .pb2(),
 
           aw.spaceV(16),
 
@@ -507,18 +522,25 @@ class ComprehensiveExamples extends StatelessWidget {
 
           const Text('Layout Helpers:').fontBold().pb2(),
 
-          aw.row([
-            const Text('Row 1').bgBlue200().p2(),
-            const Text('Row 2').bgGreen200().p2(),
-            const Text('Row 3').bgOrange200().p2(),
-          ]).spaceBetween().border().p2(),
+          aw
+              .row([
+                const Text('Row 1').bgBlue200().p2(),
+                const Text('Row 2').bgGreen200().p2(),
+                const Text('Row 3').bgOrange200().p2(),
+              ])
+              .spaceBetween()
+              .border()
+              .p2(),
 
           aw.spaceV(8),
 
-          aw.column([
-            const Text('Column 1').bgBlue200().p2().wFull(),
-            const Text('Column 2').bgGreen200().p2().wFull(),
-          ]).border().p2(),
+          aw
+              .column([
+                const Text('Column 1').bgBlue200().p2().wFull(),
+                const Text('Column 2').bgGreen200().p2().wFull(),
+              ])
+              .border()
+              .p2(),
 
           aw.spaceV(16),
 
@@ -528,7 +550,11 @@ class ComprehensiveExamples extends StatelessWidget {
             child: Column(
               children: [
                 aw.text('Card Title').textLg().fontBold(),
-                aw.text('This is a pre-styled card using aw.card()').textSm().textGray600().pt2(),
+                aw
+                    .text('This is a pre-styled card using aw.card()')
+                    .textSm()
+                    .textGray600()
+                    .pt2(),
               ],
             ),
           ),

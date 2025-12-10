@@ -11,10 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Awaitware UI Utilities Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        useMaterial3: true,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true),
       home: const DemoHomePage(),
     );
   }
@@ -75,22 +72,15 @@ class DemoHomePage extends StatelessWidget {
   Widget _buildHeader() {
     return Column(
       children: [
-        const Text('Welcome to Awaitware UI Utilities')
-            .text4Xl()
-            .fontBold()
-            .textGray900()
-            .textCenter(),
-        const Text('Powerful Flutter UI toolkit with 500+ utilities')
-            .textLg()
-            .textGray600()
-            .textCenter()
-            .pt2(),
-        const Text('Build UIs 60-70% faster!')
-            .textBase()
-            .fontMedium()
-            .textBlue600()
-            .textCenter()
-            .pt1(),
+        const Text(
+          'Welcome to Awaitware UI Utilities',
+        ).text4Xl().fontBold().textGray900().textCenter(),
+        const Text(
+          'Powerful Flutter UI toolkit with 500+ utilities',
+        ).textLg().textGray600().textCenter().pt2(),
+        const Text(
+          'Build UIs 60-70% faster!',
+        ).textBase().fontMedium().textBlue600().textCenter().pt1(),
       ],
     ).p6().bgBlue50().roundedXl().m4();
   }
@@ -142,14 +132,7 @@ class DemoHomePage extends StatelessWidget {
         Text(title).textLg().fontSemibold().textGray900().pt4(),
         Text(description).textSm().textGray600().textCenter().pt1(),
       ],
-    )
-        .p6()
-        .bgWhite()
-        .roundedXl()
-        .shadowMd()
-        .border()
-        .w48()
-        .intrinsicHeight();
+    ).p6().bgWhite().roundedXl().shadowMd().border().w48().intrinsicHeight();
   }
 
   Widget _buildButtonSection() {
@@ -212,25 +195,25 @@ class DemoHomePage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text('Statistics Dashboard')
-            .text2Xl()
-            .fontBold()
-            .textGray900()
-            .pb4(),
+        const Text(
+          'Statistics Dashboard',
+        ).text2Xl().fontBold().textGray900().pb4(),
         [
           _buildStatCard('1,234', 'Active Users', Icons.people, Colors.blue),
-          _buildStatCard(
-              '\$5.6K', 'Revenue', Icons.attach_money, Colors.green),
+          _buildStatCard('\$5.6K', 'Revenue', Icons.attach_money, Colors.green),
           _buildStatCard('89', 'Orders', Icons.shopping_cart, Colors.orange),
-          _buildStatCard(
-              '+12%', 'Growth', Icons.trending_up, Colors.purple),
+          _buildStatCard('+12%', 'Growth', Icons.trending_up, Colors.purple),
         ].wrapSpaced(spacing: 12, runSpacing: 12),
       ],
     ).p4();
   }
 
   Widget _buildStatCard(
-      String value, String label, IconData icon, MaterialColor color) {
+    String value,
+    String label,
+    IconData icon,
+    MaterialColor color,
+  ) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -245,11 +228,9 @@ class DemoHomePage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text('Product Card Example')
-            .text2Xl()
-            .fontBold()
-            .textGray900()
-            .pb4(),
+        const Text(
+          'Product Card Example',
+        ).text2Xl().fontBold().textGray900().pb4(),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -261,19 +242,15 @@ class DemoHomePage extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text('Premium Headphones')
-                    .textXl()
-                    .fontSemibold()
-                    .textGray900(),
-                const Text('High-quality wireless audio')
-                    .textSm()
-                    .textGray600()
-                    .pt1(),
-                const Text('\$299.99')
-                    .text3Xl()
-                    .fontBold()
-                    .textGreen600()
-                    .pt4(),
+                const Text(
+                  'Premium Headphones',
+                ).textXl().fontSemibold().textGray900(),
+                const Text(
+                  'High-quality wireless audio',
+                ).textSm().textGray600().pt1(),
+                const Text(
+                  '\$299.99',
+                ).text3Xl().fontBold().textGreen600().pt4(),
                 [
                   const Text('In Stock')
                       .textXs()
@@ -314,15 +291,12 @@ class DemoHomePage extends StatelessWidget {
     return Builder(
       builder: (context) => Column(
         children: [
-          const Text('Made with ❤️ using Awaitware UI Utilities')
-              .textSm()
-              .textGray600()
-              .textCenter(),
-          const Text('Try it in your Flutter apps!')
-              .textXs()
-              .textGray500()
-              .textCenter()
-              .pt1(),
+          const Text(
+            'Made with ❤️ using Awaitware UI Utilities',
+          ).textSm().textGray600().textCenter(),
+          const Text(
+            'Try it in your Flutter apps!',
+          ).textXs().textGray500().textCenter().pt1(),
           aw.spaceV(16),
           GestureDetector(
             onTap: () {

@@ -8,66 +8,63 @@ extension FlexExtensions on List<Widget> {
     MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
     CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center,
     MainAxisSize mainAxisSize = MainAxisSize.max,
-  }) =>
-      Row(
-        mainAxisAlignment: mainAxisAlignment,
-        crossAxisAlignment: crossAxisAlignment,
-        mainAxisSize: mainAxisSize,
-        children: this,
-      );
+  }) => Row(
+    mainAxisAlignment: mainAxisAlignment,
+    crossAxisAlignment: crossAxisAlignment,
+    mainAxisSize: mainAxisSize,
+    children: this,
+  );
 
-  Widget rowSpaceBetween() => Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: this);
-  Widget rowSpaceAround() => Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: this);
-  Widget rowSpaceEvenly() => Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: this);
+  Widget rowSpaceBetween() =>
+      Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: this);
+  Widget rowSpaceAround() =>
+      Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: this);
+  Widget rowSpaceEvenly() =>
+      Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: this);
   Widget rowCenter() => Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: this,
-      );
+    mainAxisAlignment: MainAxisAlignment.center,
+    crossAxisAlignment: CrossAxisAlignment.center,
+    children: this,
+  );
 
   // ==================== COLUMN ====================
   Widget column({
     MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
     CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center,
     MainAxisSize mainAxisSize = MainAxisSize.max,
-  }) =>
-      Column(
-        mainAxisAlignment: mainAxisAlignment,
-        crossAxisAlignment: crossAxisAlignment,
-        mainAxisSize: mainAxisSize,
-        children: this,
-      );
+  }) => Column(
+    mainAxisAlignment: mainAxisAlignment,
+    crossAxisAlignment: crossAxisAlignment,
+    mainAxisSize: mainAxisSize,
+    children: this,
+  );
 
-  Widget columnSpaceBetween() => Column(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: this);
-  Widget columnSpaceAround() => Column(mainAxisAlignment: MainAxisAlignment.spaceAround, children: this);
-  Widget columnSpaceEvenly() => Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: this);
+  Widget columnSpaceBetween() =>
+      Column(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: this);
+  Widget columnSpaceAround() =>
+      Column(mainAxisAlignment: MainAxisAlignment.spaceAround, children: this);
+  Widget columnSpaceEvenly() =>
+      Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: this);
   Widget columnCenter() => Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: this,
-      );
+    mainAxisAlignment: MainAxisAlignment.center,
+    crossAxisAlignment: CrossAxisAlignment.center,
+    children: this,
+  );
 
   // ==================== STACK ====================
   Widget stack({
     AlignmentGeometry alignment = AlignmentDirectional.topStart,
     StackFit fit = StackFit.loose,
-  }) =>
-      Stack(alignment: alignment, fit: fit, children: this);
+  }) => Stack(alignment: alignment, fit: fit, children: this);
 
   Widget stackCenter() => Stack(alignment: Alignment.center, children: this);
 
   // ==================== WRAP ====================
-  Widget wrap({double spacing = 0, double runSpacing = 0}) => Wrap(
-        spacing: spacing,
-        runSpacing: runSpacing,
-        children: this,
-      );
+  Widget wrap({double spacing = 0, double runSpacing = 0}) =>
+      Wrap(spacing: spacing, runSpacing: runSpacing, children: this);
 
-  Widget wrapSpaced({double spacing = 8, double runSpacing = 8}) => Wrap(
-        spacing: spacing,
-        runSpacing: runSpacing,
-        children: this,
-      );
+  Widget wrapSpaced({double spacing = 8, double runSpacing = 8}) =>
+      Wrap(spacing: spacing, runSpacing: runSpacing, children: this);
 
   // ==================== GAP ====================
   List<Widget> gap(double width) {

@@ -23,7 +23,8 @@ class aw {
   /// ```dart
   /// aw.text('Hello').text2Xl().fontBold()
   /// ```
-  static Text text(String data, {
+  static Text text(
+    String data, {
     Key? key,
     TextStyle? style,
     TextAlign? textAlign,
@@ -84,7 +85,8 @@ class aw {
   /// ```dart
   /// aw.row([Widget1(), Widget2()]).spaceBetween()
   /// ```
-  static Row row(List<Widget> children, {
+  static Row row(
+    List<Widget> children, {
     MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
     CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center,
     MainAxisSize mainAxisSize = MainAxisSize.max,
@@ -101,7 +103,8 @@ class aw {
   /// ```dart
   /// aw.column([Widget1(), Widget2()]).spaceEvenly()
   /// ```
-  static Column column(List<Widget> children, {
+  static Column column(
+    List<Widget> children, {
     MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
     CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center,
     MainAxisSize mainAxisSize = MainAxisSize.max,
@@ -118,22 +121,20 @@ class aw {
   /// ```dart
   /// aw.stack([Background(), Overlay()])
   /// ```
-  static Stack stack(List<Widget> children, {
+  static Stack stack(
+    List<Widget> children, {
     AlignmentGeometry alignment = AlignmentDirectional.topStart,
     StackFit fit = StackFit.loose,
   }) {
-    return Stack(
-      alignment: alignment,
-      fit: fit,
-      children: children,
-    );
+    return Stack(alignment: alignment, fit: fit, children: children);
   }
 
   /// Create a Wrap from a list of widgets
   /// ```dart
   /// aw.wrap([Chip1(), Chip2(), Chip3()], spacing: 8)
   /// ```
-  static Wrap wrap(List<Widget> children, {
+  static Wrap wrap(
+    List<Widget> children, {
     double spacing = 0,
     double runSpacing = 0,
     WrapAlignment alignment = WrapAlignment.start,
@@ -219,7 +220,8 @@ class aw {
   /// ```dart
   /// aw.icon(Icons.star).size16().textBlue600()
   /// ```
-  static Icon icon(IconData icon, {
+  static Icon icon(
+    IconData icon, {
     Key? key,
     double? size,
     Color? color,
@@ -240,26 +242,22 @@ class aw {
   /// ```dart
   /// aw.imageNetwork('url').aspectSquare().roundedXl()
   /// ```
-  static Image imageNetwork(String url, {
+  static Image imageNetwork(
+    String url, {
     Key? key,
     double? width,
     double? height,
     BoxFit? fit,
   }) {
-    return Image.network(
-      url,
-      key: key,
-      width: width,
-      height: height,
-      fit: fit,
-    );
+    return Image.network(url, key: key, width: width, height: height, fit: fit);
   }
 
   /// Create an asset Image widget
   /// ```dart
   /// aw.imageAsset('assets/image.png').aspectVideo().roundedLg()
   /// ```
-  static Image imageAsset(String assetName, {
+  static Image imageAsset(
+    String assetName, {
     Key? key,
     double? width,
     double? height,
@@ -294,14 +292,12 @@ class aw {
       style: ElevatedButton.styleFrom(
         backgroundColor: backgroundColor,
         foregroundColor: textColor,
-        padding: padding ?? const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+        padding:
+            padding ?? const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
       ),
       child: Text(
         text,
-        style: TextStyle(
-          fontSize: fontSize,
-          fontWeight: fontWeight,
-        ),
+        style: TextStyle(fontSize: fontSize, fontWeight: fontWeight),
       ),
     );
   }
@@ -324,14 +320,16 @@ class aw {
       decoration: BoxDecoration(
         color: color ?? Colors.white,
         borderRadius: BorderRadius.circular(borderRadius ?? 12),
-        boxShadow: boxShadow ?? [
-          const BoxShadow(
-            color: Color(0x1A000000),
-            offset: Offset(0, 4),
-            blurRadius: 6,
-            spreadRadius: -1,
-          ),
-        ],
+        boxShadow:
+            boxShadow ??
+            [
+              const BoxShadow(
+                color: Color(0x1A000000),
+                offset: Offset(0, 4),
+                blurRadius: 6,
+                spreadRadius: -1,
+              ),
+            ],
       ),
       child: child,
     );
@@ -365,10 +363,7 @@ class aw {
   /// ```dart
   /// aw.padding(child: Text('Hello'), padding: EdgeInsets.all(16))
   /// ```
-  static Padding padding({
-    required Widget child,
-    required EdgeInsets padding,
-  }) {
+  static Padding padding({required Widget child, required EdgeInsets padding}) {
     return Padding(padding: padding, child: child);
   }
 }

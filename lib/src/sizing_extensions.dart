@@ -28,24 +28,30 @@ extension SizingExtensions on Widget {
   // ==================== WIDTH - PERCENTAGES ====================
   Widget wFull() => SizedBox(width: double.infinity, child: this);
   Widget wHalf() => LayoutBuilder(
-        builder: (context, constraints) => SizedBox(width: constraints.maxWidth * 0.5, child: this),
-      );
+    builder: (context, constraints) =>
+        SizedBox(width: constraints.maxWidth * 0.5, child: this),
+  );
   Widget wOneThird() => LayoutBuilder(
-        builder: (context, constraints) => SizedBox(width: constraints.maxWidth * 0.3333, child: this),
-      );
+    builder: (context, constraints) =>
+        SizedBox(width: constraints.maxWidth * 0.3333, child: this),
+  );
   Widget wTwoThirds() => LayoutBuilder(
-        builder: (context, constraints) => SizedBox(width: constraints.maxWidth * 0.6666, child: this),
-      );
+    builder: (context, constraints) =>
+        SizedBox(width: constraints.maxWidth * 0.6666, child: this),
+  );
   Widget wOneQuarter() => LayoutBuilder(
-        builder: (context, constraints) => SizedBox(width: constraints.maxWidth * 0.25, child: this),
-      );
+    builder: (context, constraints) =>
+        SizedBox(width: constraints.maxWidth * 0.25, child: this),
+  );
   Widget wThreeQuarters() => LayoutBuilder(
-        builder: (context, constraints) => SizedBox(width: constraints.maxWidth * 0.75, child: this),
-      );
+    builder: (context, constraints) =>
+        SizedBox(width: constraints.maxWidth * 0.75, child: this),
+  );
   Widget wAuto() => this;
   Widget wScreen() => LayoutBuilder(
-        builder: (context, constraints) => SizedBox(width: MediaQuery.of(context).size.width, child: this),
-      );
+    builder: (context, constraints) =>
+        SizedBox(width: MediaQuery.of(context).size.width, child: this),
+  );
 
   // ==================== HEIGHT - FIXED ====================
   Widget h0() => SizedBox(height: 0, child: this);
@@ -72,29 +78,60 @@ extension SizingExtensions on Widget {
   // ==================== HEIGHT - PERCENTAGES ====================
   Widget hFull() => SizedBox(height: double.infinity, child: this);
   Widget hHalf() => LayoutBuilder(
-        builder: (context, constraints) => SizedBox(height: constraints.maxHeight * 0.5, child: this),
-      );
+    builder: (context, constraints) =>
+        SizedBox(height: constraints.maxHeight * 0.5, child: this),
+  );
   Widget hOneThird() => LayoutBuilder(
-        builder: (context, constraints) => SizedBox(height: constraints.maxHeight * 0.3333, child: this),
-      );
+    builder: (context, constraints) =>
+        SizedBox(height: constraints.maxHeight * 0.3333, child: this),
+  );
   Widget hTwoThirds() => LayoutBuilder(
-        builder: (context, constraints) => SizedBox(height: constraints.maxHeight * 0.6666, child: this),
-      );
+    builder: (context, constraints) =>
+        SizedBox(height: constraints.maxHeight * 0.6666, child: this),
+  );
   Widget hAuto() => this;
   Widget hScreen() => LayoutBuilder(
-        builder: (context, constraints) => SizedBox(height: MediaQuery.of(context).size.height, child: this),
-      );
+    builder: (context, constraints) =>
+        SizedBox(height: MediaQuery.of(context).size.height, child: this),
+  );
 
   // ==================== MAX WIDTH ====================
-  Widget maxWXs() => ConstrainedBox(constraints: const BoxConstraints(maxWidth: 320), child: this);
-  Widget maxWSm() => ConstrainedBox(constraints: const BoxConstraints(maxWidth: 384), child: this);
-  Widget maxWMd() => ConstrainedBox(constraints: const BoxConstraints(maxWidth: 448), child: this);
-  Widget maxWLg() => ConstrainedBox(constraints: const BoxConstraints(maxWidth: 512), child: this);
-  Widget maxWXl() => ConstrainedBox(constraints: const BoxConstraints(maxWidth: 576), child: this);
-  Widget maxW2Xl() => ConstrainedBox(constraints: const BoxConstraints(maxWidth: 672), child: this);
-  Widget maxW3Xl() => ConstrainedBox(constraints: const BoxConstraints(maxWidth: 768), child: this);
-  Widget maxW4Xl() => ConstrainedBox(constraints: const BoxConstraints(maxWidth: 896), child: this);
-  Widget maxW5Xl() => ConstrainedBox(constraints: const BoxConstraints(maxWidth: 1024), child: this);
+  Widget maxWXs() => ConstrainedBox(
+    constraints: const BoxConstraints(maxWidth: 320),
+    child: this,
+  );
+  Widget maxWSm() => ConstrainedBox(
+    constraints: const BoxConstraints(maxWidth: 384),
+    child: this,
+  );
+  Widget maxWMd() => ConstrainedBox(
+    constraints: const BoxConstraints(maxWidth: 448),
+    child: this,
+  );
+  Widget maxWLg() => ConstrainedBox(
+    constraints: const BoxConstraints(maxWidth: 512),
+    child: this,
+  );
+  Widget maxWXl() => ConstrainedBox(
+    constraints: const BoxConstraints(maxWidth: 576),
+    child: this,
+  );
+  Widget maxW2Xl() => ConstrainedBox(
+    constraints: const BoxConstraints(maxWidth: 672),
+    child: this,
+  );
+  Widget maxW3Xl() => ConstrainedBox(
+    constraints: const BoxConstraints(maxWidth: 768),
+    child: this,
+  );
+  Widget maxW4Xl() => ConstrainedBox(
+    constraints: const BoxConstraints(maxWidth: 896),
+    child: this,
+  );
+  Widget maxW5Xl() => ConstrainedBox(
+    constraints: const BoxConstraints(maxWidth: 1024),
+    child: this,
+  );
 
   // ==================== SIZE (WIDTH + HEIGHT) ====================
   Widget size4() => SizedBox(width: 16, height: 16, child: this);
@@ -103,5 +140,6 @@ extension SizingExtensions on Widget {
   Widget size16() => SizedBox(width: 64, height: 64, child: this);
   Widget size32() => SizedBox(width: 128, height: 128, child: this);
   Widget size64() => SizedBox(width: 256, height: 256, child: this);
-  Widget sizeFull() => SizedBox(width: double.infinity, height: double.infinity, child: this);
+  Widget sizeFull() =>
+      SizedBox(width: double.infinity, height: double.infinity, child: this);
 }
